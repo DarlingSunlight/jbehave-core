@@ -124,7 +124,7 @@ public class ParameterConverters {
                 new NumberConverter(NumberFormat.getInstance(locale)),
                 new NumberListConverter(NumberFormat.getInstance(locale), escapedListSeparator),
                 new StringListConverter(escapedListSeparator), new DateConverter(),
-                new EnumConverter(), new EnumListConverter(),
+                new EnumConverter(), new EnumListConverter(escapedListSeparator),
                 new ExamplesTableConverter(tableFactory), new ExamplesTableParametersConverter(tableFactory) };
         return defaultConverters;
     }
